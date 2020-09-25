@@ -1,0 +1,40 @@
+.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  z-index:10000;
+  background-color: rgba(255,255,255,1);
+  opacity:1;
+  transition:opacity 1s ease-in;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.loader{
+  z-index:10001;
+  width:100px;
+  height:100px;
+  border:2px white solid;
+  border-radius:50%;
+  border-left:grey solid 1px;
+  border-top:grey solid 2px;
+}
+
+path.shp0{
+  color:none;
+  fill:none;
+  stroke:black;
+  stroke-dasharray: 300;
+  stroke-dashoffset: -900;
+  stroke-width:1;
+  animation: dash 8s linear infinite;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 900;
+  }
+}

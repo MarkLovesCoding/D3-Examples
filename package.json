@@ -1,0 +1,19 @@
+{
+  "name": "d3-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass public/stylesheets/d3.scss public/stylesheets/d3.css",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node": "^14.12.0",
+    "node-sass": "^4.14.1"
+  }
+}
